@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soil Fertility Prediction</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            text-align: center;
+            margin-top: 100px;
+        }
+        form {
+            background: white;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+        input {
+            margin: 10px;
+            padding: 8px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌱 Soil Fertility Prediction</h1>
+    <form action="/predict" method="POST">
+        <input type="text" name="N" placeholder="Nitrogen (N)" required><br>
+        <input type="text" name="P" placeholder="Phosphorus (P)" required><br>
+        <input type="text" name="K" placeholder="Potassium (K)" required><br>
+        <input type="text" name="pH" placeholder="pH Value" required><br>
+        <input type="text" name="EC" placeholder="Electrical Conductivity" required><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
